@@ -1,0 +1,22 @@
+cd
+git init
+git config user.name "YomnaOsama"
+git config user.email "yabufrikha@gmail.com"
+git config --list
+git add .
+git status
+rm file2
+git status
+git checkout file2
+git status
+git commit -m "file 1" getting_started
+git commit -m "file 2" file2
+git commit -m "file 3" file3
+git log
+git remote add sprint https://github.com/YomnaOsama/Sprint0.git 
+git remote -v
+git remote sprint
+git pull sprint
+git push sprint master
+git pull sprint master
+
