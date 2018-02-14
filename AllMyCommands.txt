@@ -19,4 +19,61 @@ git remote sprint
 git pull sprint
 git push sprint master
 git pull sprint master
+yomna@yomna-osama:~/Desktop/Sprint0$ git branch ReadMe
+yomna@yomna-osama:~/Desktop/Sprint0$ git branch
+  ReadMe
+* master
+yomna@yomna-osama:~/Desktop/Sprint0$ git checkout ReadMe
+Switched to branch 'ReadMe'
+yomna@yomna-osama:~/Desktop/Sprint0$ git branch
+* ReadMe
+  master
+yomna@yomna-osama:~/Desktop/Sprint0$ git reset --soft HEAD^
+yomna@yomna-osama:~/Desktop/Sprint0$ git log
+commit 82f14a8916bbfa8e73f665ac06e0fa5801f2d14f
+Merge: de7dc60 3eb9f1c
+Author: YomnaOsama <yabufrikha@gmail.com>
+Date:   Tue Feb 13 13:53:34 2018 +0200
+
+    Merge branch 'master' of https://github.com/YomnaOsama/sprint0
+
+commit de7dc601f9744ceeedae738f01a05e151d689488
+Author: YomnaOsama <yabufrikha@gmail.com>
+Date:   Tue Feb 13 13:45:32 2018 +0200
+
+    file3
+
+commit f02a80bd5cf8153576d6fcb966fa199c3c71d793
+Author: YomnaOsama <yabufrikha@gmail.com>
+Date:   Tue Feb 13 13:45:20 2018 +0200
+
+    file 2
+
+commit 1b844bd8beaf0d3fa77bc1ee2bb1a2a1254f62cd
+Author: YomnaOsama <yabufrikha@gmail.com>
+Date:   Tue Feb 13 13:45:00 2018 +0200
+
+    file 1
+
+commit 3eb9f1c0e97ac3d1d07364011c17291005894ac7
+Author: YomnaOsama <35773151+YomnaOsama@users.noreply.github.com>
+Date:   Tue Feb 13 13:22:17 2018 +0200
+
+    Initial commit
+yomna@yomna-osama:~/Desktop/Sprint0$ git branch
+* ReadMe
+  master
+yomna@yomna-osama:~/Desktop/Sprint0$ git add .
+yomna@yomna-osama:~/Desktop/Sprint0$ git commit
+Aborting commit due to empty commit message.
+yomna@yomna-osama:~/Desktop/Sprint0$ git commit -m "^C
+yomna@yomna-osama:~/Desktop/Sprint0$ git commit -m "added the README file"
+[ReadMe 26b2fe2] added the README file
+ 2 files changed, 35 insertions(+), 1 deletion(-)
+ create mode 100644 AllMyCommands.txt
+yomna@yomna-osama:~/Desktop/Sprint0$ git checkout master
+Switched to branch 'master'
+yomna@yomna-osama:~/Desktop/Sprint0$ git merge ReadMe
+Merge made by the 'recursive' strategy.
+yomna@yomna-osama:~/Desktop/Sprint0$ 
 
